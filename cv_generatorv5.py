@@ -104,7 +104,7 @@ cv_data = load_cv_data(data_file)
 
 # ============ PDF GENERATION ============
 
-def build_cv(output_filename='my_cv.pdf'):
+def build_cv(output_filename='your_cv.pdf'):
     doc = SimpleDocTemplate(
         output_filename,
         pagesize=A4,
@@ -197,7 +197,7 @@ def build_cv(output_filename='my_cv.pdf'):
     else:
         story.append(Paragraph(profile, styles['CVBody']))
 
-    # --- Skills & Education side-by-side ---
+    # --- Skills & Education ----
     skills_col = []
     skills_col.append(Paragraph('KEY SKILLS', styles['SectionHeading']))
     for entry in cv_data['skills']:
@@ -227,7 +227,7 @@ def build_cv(output_filename='my_cv.pdf'):
         ('TOPPADDING', (0,0), (-1,-1), 0),
         ('BOTTOMPADDING', (0,0), (-1,-1), 0),
         ('BACKGROUND', (0,0), (-1,-1), COLORS['background']),
-        # White vertical line between columns, starting after first column, spanning all rows
+        
         ('LINE AFTER', (0,0), (0,-1), 1, COLORS['text']),
     ]))
     story.append(table_skilledu)
@@ -258,4 +258,4 @@ def build_cv(output_filename='my_cv.pdf'):
     print(f" PDF successfully generated: {output_filename}")
 
 if __name__ == '__main__':
-    build_cv('professional_cv.pdf')
+    build_cv('your_cv.pdf')
