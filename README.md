@@ -1,0 +1,2 @@
+Automates the creation of a professional, styled CV by transforming structured YAML data into a polished PDF document. The pipeline reads a YAML file containing personal information, skills, experience, and education, then uses Python and the ReportLab library to generate a clean, two-column layout with a dark theme and teal accents. It highlights infrastructure-as-code principles applied to document generation—ideal for version-controlling your CV alongside code repositories.
+

@@ -1,0 +1,85 @@
+---
+# ==============================================
+# CV Data Template - Copy to cv_data.yaml and edit
+# ==============================================
+
+name: "Your Full Name"
+title: "Your Professional Title | Optional Second Title"
+
+# Profile section can be a string or a dictionary with summary, focus, current_goal
+profile:
+  summary: >
+    A brief professional summary that describes your background,
+    key strengths, and what you're looking for. Keep it concise.
+
+  focus:
+    - "Skill Area 1"
+    - "Skill Area 2"
+    - "Skill Area 3"
+   
+  current_goal: "A short‑term professional goal (e.g., certification, project)"
+
+contact:
+  phone: "+00 000 000 0000"
+  email: "your.email@example.com"
+  location: "City, Region, Country"
+  github: "github.com/yourusername"
+  linkedin: "linkedin.com/in/yourprofile"
+
+skills:
+  - category: "Operating Systems"
+    items:
+      - "Example OS 1"
+      - "Example OS 2"
+      - "Example OS 3"
+
+  - category: "Virtualization"
+    items:
+      - "Example Tool 1"
+      - "Example Tool 2"
+      - "Example Tool 3"
+
+  - category: "Automation & DevOps"
+    items:
+      - "Example Tool 1"
+      - "Example Tool 2"
+      - "Example Tool 3"
+
+  - category: "Networking"
+    items:
+      - "Example Protocol 1"
+      - "Example Protocol 2"
+
+education:
+- degree: "Degree Name, Major"
+  school: "University/College Name"
+  institution: "Institution Name (if different from school)"
+  graduation: "Month Year"
+  notes:
+    - "Relevant coursework or achievements"
+    - "Honors or extracurricular activities"
+
+experience:
+  - title: "Project or Job Title"
+    period: "Start Date - End Date"
+    bullets:
+      - "Accomplishment or responsibility bullet point 1"
+      - "Accomplishment or responsibility bullet point 2"
+      - "Accomplishment or responsibility bullet point 3"
+
+  - title: "Another Project or Job"
+    period: "Start Date - End Date"
+    bullets:
+      - "Key achievement in this role"
+      - "Another important point"
+
+# Optional certifications section
+certifications:
+  - "Certification Name, Issuing Organization, Year"
+  - ["Certification Name", "Issuing Organization", "Year"]
+
+meta:
+  version: "3.1"
+  theme: "dark"
+  authoring_format: "yaml"
+  pipeline: "yaml → python → reportlab"
